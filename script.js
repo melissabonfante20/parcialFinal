@@ -18,19 +18,22 @@ $(document).ready(function(){
     });
     
     
-    /*
-    $('#caja-03 a').mouseover(function(){
-        
+    $('#caja-04 a').mouseover(function(){
+        $('#caja-04 .info-interna').fadeIn(500);
     });
     
-    $('#caja-04 a').mouseover(function(){
-        
+    $('#caja-04 a').mouseleave(function(){
+        $('#caja-04 .info-interna').fadeOut(300);
     });
     
     $('#caja-05 a').mouseover(function(){
-        
+        $('#caja-05 .info-interna').fadeIn(500);
     });
-    */
+    
+    $('#caja-05 a').mouseleave(function(){
+        $('#caja-05 .info-interna').fadeOut(300);
+    });
+    
     
     $('#caja-01 a, #caja-02 a, #caja-03 a, #caja-04 a, #caja-05 a').click(function(){
         event.preventDefault();
