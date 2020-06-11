@@ -24,7 +24,8 @@
         <!--Llamado a Google Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         
-        <!--Llamado a CSS propio-->
+		<!--Llamado a CSS propio-->
+		<link href="node_modules/lightbox2/src/css/lightbox.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/estilo.css">
     </head>
     
@@ -34,17 +35,17 @@
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 				<div class="overlay-content">
-				<a href="#">Ver Catálogo</a>
+				<a href="img/Iphone.jpg" data-lightbox="roadtrip">Ver Catálogo</a>
 				</div>
 		
 			</div>
-			<div class="logo" style="float: left;">
-				<a href="index.html" style="color: black; text-decoration: none; font-size: x-large;">
-					<img src="img/mac.png" width="50px" height="50px" style="vertical-align: middle;"> Apple
+			<div class="logo" style="float: left;padding: 5px;margin-top: 5px;">
+				<a href="index.html" style="color: white; text-decoration: none; font-size: x-large;">
+					<img src="img/mac.png" width="40px" height="40px" style="vertical-align: middle;"> Apple
 				</a>
 			</div>
-			<div class="menu" style="float:right;vertical-align: middle; margin-top: 10px;">
-				<span onclick="openNav()" style="cursor: pointer; font-size: 20px;">Menú &#9776;</span>
+			<div class="menu" style="float:right;vertical-align: middle; margin-top: 15px;padding: 5px;">
+				<span onclick="openNav()" style="cursor: pointer; font-size: 20px; color: white;">Menú &#9776;</span>
 			</div>
 			
 		</header>
@@ -52,6 +53,10 @@
 		<main>
 			<section id="zona-infografia">
 				<figure>
+					<div class="caja-info" id="caja-catalogo">
+						<a href="img/Iphone.jpg" data-lightbox="roadtrip" style="width: 100%;
+						border-radius: 5px;">Ver Catálogo</a>
+					</div>
 					<div class="caja-info" id="caja-01">
 						<a href="#">+</a>
 						<div class="info-interna">
@@ -83,14 +88,6 @@
 						</div>
 					</div>
 					
-					<div class="caja-info" id="caja-03">
-						<a href="#">+</a>
-						<div class="info-interna">
-							<h3>Título 3</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-						</div>
-					</div>
-					
 					<div class="caja-info" id="caja-04">
 						<a href="#">+</a>
 						<div class="info-interna">
@@ -109,18 +106,22 @@
 				</figure>
 			</section>
 		</main>
-		
 		<footer>
 			<nav>
-				
+				<p>Melissa Bonfante Formativa 1-2 (3er Corte).</p>
 			</nav>
 		</footer>
-        
-        <!--Llamados a JavaScript-->
+		<a href="img/1.jpg" data-lightbox="roadtrip" style="display: none;">Image #2</a>
+		<a href="img/2.jpg" data-lightbox="roadtrip" style="display: none;">Image #2</a>
+		<a href="img/3.jpg" data-lightbox="roadtrip" style="display: none;">Image #2</a>
+		<a href="img/4.jpg" data-lightbox="roadtrip" style="display: none;">Image #2</a>
+		<a href="img/5.jpg" data-lightbox="roadtrip" style="display: none;">Image #2</a>
         <!--Llamado a jQuery y a jQuery Easing desde un CDN-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <script src="script.js"></script>
+		<script src="script.js"></script> 
+		<!--Llamados a JavaScript-->
+		<script src="node_modules/lightbox2/src/js/lightbox.js"></script>
         <!--Configuración de Menú Interno y Menú Cortina-->
         <script>
 			function openNav() {
@@ -130,6 +131,20 @@
 			function closeNav() {
 			document.getElementById("myNav").style.width = "0%";
 			}
+			(function ($){
+				$(document).ready(function(){
+					$('.ligthbox').fancybox();
+				});
+			})
+			lightbox.option({
+      			'resizeDuration': 200,
+				'wrapAround': true,
+				'maxWidth':500,
+				'Width': 500,
+				'disableScrolling': true,
+				'positionFromTop':100,
+				'wrapAround':true  
+    		})
 		</script>
     </body>
 </html>

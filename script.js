@@ -61,12 +61,7 @@ $(document).ready(function(){
     /* ---------------- */
     
     
-    $('#flipbook').turn({
-        width: 900,
-        height: 530,
-        autoCenter: true,
-        gradients: true
-    });
+   
 });
 
 

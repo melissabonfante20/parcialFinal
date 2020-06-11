@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-1",
+  "version": "1.0.0",
+  "description": "Formativa1-2",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissabonfante20/formativa1_3corte.git"
+  },
+  "author": "Melissa Bonfante",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melissabonfante20/formativa1_3corte/issues"
+  },
+  "homepage": "https://github.com/melissabonfante20/formativa1_3corte#readme",
+  "dependencies": {
+    "lightbox2": "^2.11.1"
+  }
+}
