@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--Título y Descripción de la Página x cada página del sitio web-->
+        <meta title="Alberto Angulo - Estudiante de Diseño Gráfico">
+        <title>Melissa Bonfante - Estudiante de Diseño Gráfico</title>
+        <meta name="description" content="Tercer Semestre"/>
+        
+        <!--Codificación de Caracteres-->
+        <meta charset="utf-8">
+        
+        <!--Meta del Responsive-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Link del Icon-->
+		<link rel="shortcut icon" href="img/mac.png" type="image/x-icon">
+        <!--Normalize, Modernizr y Prefix Free desde CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        
+        <!--Llamado a Font Awesome Icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!--Llamado a Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        
+        <!--Llamado a CSS propio-->
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    
+    <body>
+        <header>
+			<div id="myNav" class="overlay">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+				<div class="overlay-content">
+				<a href="#">Ver Catálogo</a>
+				</div>
+		
+			</div>
+			<div class="logo" style="float: left;">
+				<a href="index.html" style="color: black; text-decoration: none; font-size: x-large;">
+					<img src="img/mac.png" width="50px" height="50px" style="vertical-align: middle;"> Apple
+				</a>
+			</div>
+			<div class="menu" style="float:right;vertical-align: middle; margin-top: 10px;">
+				<span onclick="openNav()" style="cursor: pointer; font-size: 20px;">Menú &#9776;</span>
+			</div>
+			
+		</header>
+		
+		<main>
+			<section id="zona-infografia">
+				<figure>
+					<div class="caja-info" id="caja-01">
+						<a href="#">+</a>
+						<div class="info-interna">
+							<h3>Cámara Frontal</h3>
+							<ul>
+								<li>Cámara de 7 MP</li>
+								<li>Apertura de ƒ/2.2</li>
+								<li>Modo Retrato con bokeh avanzado y Control de Profundidad</li>
+								<li>Reconocimiento Facial</li>
+								<li>Animoji y Memoji</li>
+								<li>Grabación de video HD de 1080p a 30 cps o 60 cps</li>
+								<li>HDR Inteligente para fotos</li>
+
+							</ul>
+						</div>
+					</div>
+					
+					<div class="caja-info" id="caja-02">
+						<a href="#">+</a>
+						<div class="info-interna">
+							<h3>Cámara trasera</h3>
+							<ul>
+								<li>Cámara de 12 MP con gran angular</li>
+								<li>Apertura de ƒ/1.8</li>
+								<li>Zoom digital de hasta 5x</li>
+								<li>Modo Retrato con bokeh avanzado y Control de Profundidad</li>
+								<li>Iluminación de Retrato con tres efectos (Luz Natural, Luz de Estudio Fotográfico, Luz al Contorno)</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="caja-info" id="caja-03">
+						<a href="#">+</a>
+						<div class="info-interna">
+							<h3>Título 3</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					
+					<div class="caja-info" id="caja-04">
+						<a href="#">+</a>
+						<div class="info-interna">
+							<h3>Título 4</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+					
+					<div class="caja-info" id="caja-05">
+						<a href="#">+</a>
+						<div class="info-interna">
+							<h3>Título 5</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+						</div>
+					</div>
+				</figure>
+			</section>
+		</main>
+		
+		<footer>
+			<nav>
+				
+			</nav>
+		</footer>
+        
+        <!--Llamados a JavaScript-->
+        <!--Llamado a jQuery y a jQuery Easing desde un CDN-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="script.js"></script>
+        <!--Configuración de Menú Interno y Menú Cortina-->
+        <script>
+			function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+			}
+
+			function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+			}
+		</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

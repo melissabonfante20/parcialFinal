@@ -1,0 +1,216 @@
+body{
+	font-family: 'Mukta', sans-serif;
+}
+header {
+	max-width: 95%;
+	width: 95%;
+	height: 56px;
+	display: block;
+	margin: 0;
+	float: none;
+	position: fixed;
+	top: 15px;
+	left: 15px;
+	z-index: 99990;
+}
+header a { }
+header a img { }
+header a:hover { }
+header a:hover img { }
+
+
+
+main {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin: 0;
+	float: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background: #FFFFFF;
+}
+main section#zona-infografia {
+	width: 1100px;
+	height: 700px;
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: relative;
+	background: url('../img/Iphone.jpg') no-repeat top center;
+	background-size: contain,cover;
+}
+main section#zona-infografia figure {
+	width: 100%;
+	height: 700px;
+	display: block;
+	margin: 0 auto;
+	float: none;
+	position: relative;
+}
+main section#zona-infografia figure div.caja-info {
+	display: block;
+	margin: 0;
+	float: none;
+	position: absolute;
+}
+main section#zona-infografia figure div.caja-info#caja-01 {
+	width: 270px;
+    height: 260px;
+    top: 133px;
+    left: 388px;
+}
+main section#zona-infografia figure div.caja-info#caja-02 {
+	width: 300px;
+    height: 240px;
+    top: 121px;
+    right: 178px;
+}
+main section#zona-infografia figure div.caja-info#caja-03 {
+	width: 200px;
+    height: 290px;
+    bottom: -136px;
+    right: 221px;
+}
+main section#zona-infografia figure div.caja-info#caja-04 {
+	width: 350px;
+    height: 200px;
+    bottom: 322px;
+    right: 154px;
+}
+main section#zona-infografia figure div.caja-info#caja-05 {
+	width: 320px;
+    height: 170px;
+    bottom: 0px;
+    left: 390px;
+}
+
+@keyframes animacion-puntos {
+	0% { background: rgb(0, 0, 0); color: #fff; transform: scale(1); }
+	50% { background: #FFFFFF; color: #000; transform: scale(1.2); }
+	100% { background: #000; color: #fff; transform: scale(1); }
+}
+
+main section#zona-infografia figure div.caja-info a {
+	/* Maquetación */
+	width: 30px;
+    height: auto;
+    display: block;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+	
+	/* Estilo y Acabados */
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    color: #fff;
+    background: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+    padding: 2px 0 4px;
+    border-radius: 50%;
+	box-shadow: 0 0 10px rgba(255,255,255,0.35);
+	transition: all 0.3s ease-in;
+	
+	/* Animaciones */
+	animation-name: animacion-puntos;
+	animation-duration: 1.2s;
+	animation-iteration-count: 5;
+	animation-direction: alternate;
+	animation-play-state: running;
+	animation-timing-function: ease-out;
+}
+main section#zona-infografia figure div.caja-info a:hover {
+	color: black;
+    background: white;
+	transition: all 0.3s ease-in;
+}
+
+main section#zona-infografia figure div.caja-info div.info-interna {
+	color:white;
+	background: rgb(0, 0, 0); margin: 30px; padding: 10px;
+	width: 300px;
+	position: absolute;
+	display: none;
+}
+main section#zona-infografia figure div.caja-info div.info-interna h3 {
+	
+}
+main section#zona-infografia figure div.caja-info div.info-interna p {
+	
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed; 
+	z-index: 1; 
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0, 0.9); 
+	overflow-x: hidden; 
+	transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+	position: relative;
+	top: 25%; /* 25% from the top */
+	width: 100%; /* 100% width */
+	text-align: center; /* Centered text/links */
+	margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block; /* Display block instead of inline */
+	transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+	.overlay a {font-size: 20px}
+	.overlay .closebtn {
+	  font-size: 40px;
+	  top: 15px;
+	  right: 35px;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+footer {  }
+footer nav {  }
